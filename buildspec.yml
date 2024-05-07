@@ -24,9 +24,9 @@ phases:
   
     commands:
     
-      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=devopscicd17 -Dsonar.projectKey=devopscicd17_JavaVulnerableLab -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
+      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=devopscicd17 -Dsonar.projectKey=devopscicd17_AWSDevopsCICD -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
       - sleep 5
-      - curl https://sonarcloud.io/api/qualitygates/project_status?devopscicd17_JavaVulnerableLab > analysis.json
+      - curl https://sonarcloud.io/api/qualitygates/project_status?devopscicd17_AWSDevopsCICD > analysis.json
       - cat analysis.json
   build:
     commands:
