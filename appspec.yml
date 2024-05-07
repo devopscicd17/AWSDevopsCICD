@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /target/JavaVulnerableLab.war
-    destination: /tmp/codedeploy-deployment-staging-area/github/
+    destination: /tmp/codedeploy-deployment-staging-area/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
